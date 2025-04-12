@@ -6,8 +6,8 @@ from telethon import TelegramClient, events
 import threading
 
 # === TELEGRAM CREDENTIALS ===
-API_ID = 25266417  # Replace with your actual API_ID
-API_HASH = '86b992e2831eb71b746ee8671563bcb2'  # Replace with your actual API_HASH
+API_ID = you api id  # Replace with your actual API_ID
+API_HASH = 'you api hash'  # Replace with your actual API_HASH
 
 # === GUI APP ===
 class ForwarderApp:
@@ -36,8 +36,8 @@ class ForwarderApp:
     def clean_text(self, text):
         if not text:
             return ""
-        # Replace all @usernames with @MemeCoinsPumpsBOT
-        text = re.sub(r'@\w+', '@MemeCoinsPumpsBOT', text)
+        # Replace all @usernames with @SOURCE_CHANNEL
+        text = re.sub(r'@\w+', '@SOURCE_CHANNEL', text)
         # Remove t.me links
         text = re.sub(r'https?://(t\.me|telegram\.me)/\S+', '', text)
         return text.strip()
