@@ -4,7 +4,7 @@ This is a Python-based Flask + Telethon web service that listens to messages fro
 
 ## 🚀 Features
 
-- Replaces @usernames with @MemeCoinsPumpsBOT
+- Replaces @usernames with SOURCE_CHANNEL_ID or the @channel
 - Removes t.me and telegram.me links
 - Forwards both text and media messages
 - Exposes a REST API to start forwarding remotely
